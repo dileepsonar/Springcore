@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <bean class="com.sspringcore.collections.Emp"  name="emp1">
+ <property name="name" value="dileep" />
+ <property name="phones">
+ <list>
+ <value>493580938593</value>
+ <value>98498t98t8</value>
+ <value>7458934959</value>
+ </list>
+ </property>
+ <property name="adresses">
+ <set>
+ <value>bidar</value>
+ <value>benglore</value>
+ <value>bhalki</value>
+ </set>
+ </property>
+ 
+ <property name="coursee">
+ <map>
+ <entry  key ="java"  value="2month"/>
+ <entry  key ="paython"  value="3month"/>
+ <entry  key ="c"  value="4month"/>
+ </map>
+ 
+ 
+ </property>
+ </bean>
+ 
+ 
+ 
+ 
+ </beans>
